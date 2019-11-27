@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-muted">data binding</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>the project title is {{title}}</p>
+      <p><input type="{{type}}"></p>
+      <p> time elapsed so far</p>
+    </div>
+  </div>
+  <div class="row mt-1" >
+    <div class="col-md-12">
+      <input type="text" [style.border]="brd"[style.color]="'blue'">
+     <p class=" mt-1"[class.alert]="true" [class.alert-info]="true"[attr.role]="'alert'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure magni temporibus asperiores nesciunt natus non aliquam hic. Repellendus esse molestias corporis cumque quisquam sequi 
+       temporibus repellat tenetur consequatur voluptate!</p>
+       <p [attr.hi]= "'hello'" class="p-3">hi goood mornig all of you</p> 
+<input type="text" [style]="style">
+     
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box" (mouseenter)="onmouseEvent($event)"(mouseleave)="onMouseLeave($event)" [style.background]="bxBkcl"></div>
+    </div>
+     <div class="row">
+       <div class="col-md-12">
+         <input type="text"[value]="title">
+         <input type="button" (click)="onBtnClk($event)" class="btn btn-primary " value="Okay">
+       </div>
+     </div>
+</div>
