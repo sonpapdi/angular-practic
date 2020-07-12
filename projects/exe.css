@@ -1,0 +1,21 @@
+/* exe styleseet css*/
+body{
+    background:magenta;
+}
+/* navbar decoration*/
+.mynav{
+    /* background-image: url(bg2.jpeg);
+    background-size: cover; */
+
+  background: #fff !important;
+
+}
+.navbar-brand{
+  font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: chartreuse;
+    margin-top: 5px;    
+
+
+}

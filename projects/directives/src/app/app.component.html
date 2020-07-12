@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+   <strong> <i>directives</i></strong>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" *ngIf="isPar">
+      <p class="alert alert-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam rerum possimus explicabo soluta adipisci molestiae eligendi ipsa distinctio fugiat fuga voluptas molestias odit eos animi provident in cum, 
+        ducimus eum.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <input type="button" value="Okay" (click)="onOkay()">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <ul>
+       <li *ngFor="let mb of mob">{{mb}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" [ngStyle]="bsob">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut suscipit, officiis debitis atque error sapiente possimus cumque voluptatibus earum eaque nesciunt velit deserunt explicabo eveniet inventore soluta assumenda asperiores tempora!
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-12" [ngClass]="{'alert':isAl,'alert-info':isAl}">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut suscipit, officiis debitis atque error sapiente possimus cumque voluptatibus earum eaque nesciunt velit deserunt explicabo eveniet inventore soluta assumenda asperiores tempora!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <input type="button" value="ClassIt" class="btn btn-info" (click)="this.isAl = !this.isAl">
+      </div>
+    </div>
+</div>
+ 
