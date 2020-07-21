@@ -17,9 +17,7 @@ export class TfComponent implements OnInit {
   }
 
 mySub( frm : NgForm){
-  console.log(frm)
+  console.log(frm.value)
+
 }
-
-
-
 }

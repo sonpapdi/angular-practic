@@ -1,11 +1,11 @@
-<h1 class="text-center">{{title}}</h1>
+<h2 class="text-center">{{title}}</h2>
 <hr>
 <div class="jumbotron">
 <div class="container">
   <div class="row">
     <div class="col-md-6">
       <h3>Reactive Form In Angular 9</h3>
-      <form>
+      <form [FormGroup]=" regForm" (ngSubmit)=onSubmit()>
         <div class="form-group">
           <label>First Name</label>
           <input type="text" class="form-control" placeholder="First Name">
@@ -21,6 +21,10 @@
         <div class="form-group">
           <label>Passwords</label>
           <input type="text" class="form-control" placeholder="Enter Password Min 6 Digit">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary">Register</button> &nbsp;
+          <button class="btn btn-danger">Cancal</button>
         </div>
       </form>
     </div>
