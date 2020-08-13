@@ -14,14 +14,16 @@ import { Component, OnInit } from '@angular/core';
   <h2> {{name.length}}</h2>
   <h2>{{name.toUpperCase()}}</h2>
   <h2>{{greetUser()}}</h2>
+  <h2>{{siteurl}}<h2>// working on current url displayed
 `,
   styles: []
 })
 export class TestComponent implements OnInit {
 
-  public name= "pooja";
+  public name = "pooja";
   public string ="pooja"+ "mau"
- public add = 2+3
+  public siteurl=window.location.href;
+  public add = 2+3
   constructor() { }
 
   ngOnInit() {
