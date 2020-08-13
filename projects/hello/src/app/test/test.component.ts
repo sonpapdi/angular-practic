@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   welcome {{name}}
   <h2>
   hiiii {{string}}
-  ok {{add}}
+
   <h2>{{2+2}}
   </h2>
   <h2>{{"pooja" + "nakate"}}</h2>
@@ -28,7 +28,7 @@ export class TestComponent implements OnInit {
   }
 
   greetUser(){
-    
+
      return "Hello" + this.name;
   }
 
