@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InterpolationConfig } from '@angular/compiler';
+import { getCurrencySymbol } from '@angular/common';
 
 @Component({
   selector: 'app-test',
@@ -6,32 +8,31 @@ import { Component, OnInit } from '@angular/core';
   <h2>
   welcome {{name}}
   <h2>
-  hiiii {{string}}
-
-  <h2>{{2+2}}
-  </h2>
-  <h2>{{"pooja" + "nakate"}}</h2>
-  <h2> {{name.length}}</h2>
-  <h2>{{name.toUpperCase()}}</h2>
-  <h2>{{greetUser()}}</h2>
-  <h2>{{siteurl}}<h2>// working on current url displayed
+  <h2 class="text-success">codevolution</h2>
+  <h2 [class]="successclass">codekul</h2>
 `,
-  styles: []
+styles:[
+`.text-success{
+  color : red;
+}
+.text-danger{
+  color : green;
+}
+.text-special{
+  color : italic;
+}
+`
+]
 })
 export class TestComponent implements OnInit {
 
-  public name = "pooja";
-  public string ="pooja"+ "mau"
-  public siteurl=window.location.href;
-  public add = 2+3
+public name ="codevolution";
+public successclass ="text-success";
+
+
   constructor() { }
 
   ngOnInit() {
-  }
-
-  greetUser(){
-
-     return "Hello" + this.name;
   }
 
 }
