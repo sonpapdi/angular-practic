@@ -9,7 +9,7 @@ import { getCurrencySymbol } from '@angular/common';
   welcome {{name}}
   <h2>
   <h2 class="text-success">codevolution</h2>
-  <h2 [class]="successclass">codekul</h2>//class binding
+  <h2 [class]="successclass">codekul</h2>//add
 `,
 styles:[
 `.text-success{
