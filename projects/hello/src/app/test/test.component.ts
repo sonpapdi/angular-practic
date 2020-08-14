@@ -9,14 +9,14 @@ import { getCurrencySymbol } from '@angular/common';
   welcome {{name}}
   <h2>
   <h2 class="text-success">codevolution</h2>
-  <h2 [class]="successclass">codekul</h2>
+  <h2 [class]="successclass">codekul</h2>//class binding
 `,
 styles:[
 `.text-success{
   color : red;
 }
 .text-danger{
-  color : green;
+  color : green;  
 }
 .text-special{
   color : italic;
