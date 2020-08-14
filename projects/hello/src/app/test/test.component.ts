@@ -7,27 +7,27 @@ import { getCurrencySymbol } from '@angular/common';
   template:`
   <h2>
   welcome {{name}}
-  <h2>
-  <h2 class="text-success">codevolution</h2>
-  <h2 [class]="successclass">codekul</h2>//add
+  </h2>
+  // style binding
+
+
+  
+  <h2>  style binding</h2>
+  <h2 [style.color]=" hasError ? 'red' :'green'"> style binding </h2>
+
+
+
 `,
 styles:[
-`.text-success{
-  color : red;
-}
-.text-danger{
-  color : green;  
-}
-.text-special{
-  color : italic;
-}
+`
 `
 ]
 })
 export class TestComponent implements OnInit {
 
 public name ="codevolution";
-public successclass ="text-success";
+public hasError = true;
+public isSpecial = true;
 
 
   constructor() { }
