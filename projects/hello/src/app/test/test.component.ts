@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
   <h2>
   welcome {{name}}
   </h2>
+
+  Event Binding //////
+
  <button (click)="onclick()">Greet</button>
  {{greeting}}
+<button (click)="onclick($event)"></button>// $event to display DOM 
+
 `,
 styles:[
 
@@ -25,9 +30,9 @@ public greeting =""
 
   ngOnInit() {
   }
-  onclick(){
-    console.log('welcome to codekul')
-    this.greeting ="welcome"
+  onclick( Event){
+    console.log(event)
+    this.greeting =event.type;// click event diplay
   }
 
 }
