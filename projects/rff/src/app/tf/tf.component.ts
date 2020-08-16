@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, Form, NgModel } from '@angular/forms';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-tf',
@@ -9,15 +10,23 @@ import { NgForm } from '@angular/forms';
 export class TfComponent implements OnInit {
 
 
-  myFrm : NgForm
+  myFrm : NgForm;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
   }
+ 
+  
+  ngOnInit() {}
+  
+  
+ 
 
 mySub( frm : NgForm){
   console.log(frm.value)
+  
+  
 
 }
+
+
 }
