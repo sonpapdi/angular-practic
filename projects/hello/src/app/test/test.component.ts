@@ -14,7 +14,7 @@ styles:[]
 })
 export class TestComponent implements OnInit {
 
-  public colors =["red","blue","green","yellow","pink","black"];
+  public colors =["red","blue","green","yellow","pink"];
   constructor() { }
 
   ngOnInit() {
