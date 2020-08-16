@@ -8,22 +8,22 @@ import { Component, OnInit } from '@angular/core';
   <h2>
   welcome {{name}}
   </h2>
-  <input #myinput type="text">
-   <button (click)="logmessage(myinput.value)">log</button>
+  <input [(ngModel)] ="name" type = "text">  
+{{name}}
+
 `,
 styles:[]
 })
 export class TestComponent implements OnInit {
 
-public name ="codevalution"
+  public name ="";
 
   constructor() { }
 
   ngOnInit() {
   }
 
-logmessage(value){
-  console.log(value);
+
 
 }
-}
+
