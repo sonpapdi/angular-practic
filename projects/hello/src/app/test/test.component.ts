@@ -5,19 +5,23 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-test',
   template:`
-  <h2>
-  welcome {{name}}
+  <h2 *ngIf ="displayname; else elseBlock">
+  welcome 
   </h2>
-  <input [(ngModel)] ="name" type = "text">  
-{{name}}
+
+  <ng-template  #elseBlock>
+  <h2>
+  Name is Hiddan
+  </h2>
+  </ng-template>
 
 `,
 styles:[]
 })
 export class TestComponent implements OnInit {
 
-  public name ="";
-
+  displayname = true;
+  
   constructor() { }
 
   ngOnInit() {
