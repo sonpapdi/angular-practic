@@ -10,7 +10,6 @@ import { Component, OnInit } from '@angular/core';
   </h2>
   <input #myinput type="text">
    <button (click)="logmessage(myinput.value)">log</button>
-  
 `,
 styles:[]
 })
