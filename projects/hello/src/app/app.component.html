@@ -1,7 +1,7 @@
 <div style="text-align:center">
 <div>
 <h1>
-welcome to {{title}}!
+{{message}}
 </h1>
-<app-test [parentData] ="name"></app-test>
+<app-test (childEvent)="message=$event" [parentData] ="name"></app-test>
 </div>
