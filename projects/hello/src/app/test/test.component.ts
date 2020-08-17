@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { InterpolationConfig } from '@angular/compiler';
 import { getCurrencySymbol } from '@angular/common';
 
@@ -6,15 +6,13 @@ import { getCurrencySymbol } from '@angular/common';
   selector: 'app-test',
   template:`
  
-<div *ngFor="let color of colors; index as i">
-<h2> {{i}} {{color}}</h2>
-</div>
+<h2>{{"Hello"+parentData}}</h2>
 `,
 styles:[]
 })
 export class TestComponent implements OnInit {
+@Input('parentData') public parentData;
 
-  public colors =["red","blue","green","yellow","pink"];
   constructor() { }
 
   ngOnInit() {
